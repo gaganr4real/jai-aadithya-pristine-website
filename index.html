@@ -3,14 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jai Aadithya Pristine - Nature's Retreat</title>    
-    <!-- External Libraries & Fonts -->
+    <title>Jai Aadithya Pristine - Nature's Retreat</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
     <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.js"></script>
     
-    <!-- Custom Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <script>
+        // Tailwind Configuration
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Montserrat', 'sans-serif'],
+                        'serif': ['Lora', 'serif'],
+                    },
+                    colors: {
+                        'base-100': '#F8F5F2', // Light Beige
+                        'neutral': '#3D403A',   // Dark Gray/Brown for text
+                        'primary': '#4A6163',   // Natural Green
+                        'accent': '#A94442',    // Barn Red
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .hero-bg {
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
 <body class="bg-base-100 text-neutral font-sans">
 
@@ -160,13 +194,13 @@
                     <p class="text-lg text-gray-700 mt-2 fade-in" style="transition-delay: 150ms;">Glimpses of the serenity that awaits you.</p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <img data-img-id="gallery1" src="" alt="Completed project villa" class="fade-in rounded-lg shadow-md aspect-square object-cover w-full h-full hover:scale-105 transition-transform">
-                    <img data-img-id="gallery2" src="" alt="Lush greenery at the project site" class="fade-in rounded-lg shadow-md aspect-square object-cover w-full h-full hover:scale-105 transition-transform" style="transition-delay: 100ms;">
-                    <img data-img-id="gallery3" src="" alt="Model flat exterior" class="fade-in rounded-lg shadow-md aspect-square object-cover w-full h-full hover:scale-105 transition-transform" style="transition-delay: 200ms;">
-                    <img data-img-id="gallery4" src="" alt="A different style of model home" class="fade-in rounded-lg shadow-md aspect-square object-cover w-full h-full hover:scale-105 transition-transform" style="transition-delay: 300ms;">
-                    <img data-img-id="gallery5" src="" alt="Spacious wooden deck" class="fade-in rounded-lg shadow-md aspect-square object-cover w-full h-full hover:scale-105 transition-transform" style="transition-delay: 400ms;">
-                    <img data-img-id="gallery6" src="" alt="Modern interior of a villa" class="fade-in rounded-lg shadow-md aspect-square object-cover w-full h-full hover:scale-105 transition-transform" style="transition-delay: 500ms;">
-                
+                    <div class="fade-in"><img data-img-id="gallery1" src="" alt="Completed project villa" class="rounded-lg shadow-md aspect-square object-cover w-full h-full hover:scale-105 transition-transform"></div>
+                    <div class="fade-in" style="transition-delay: 100ms;"><img data-img-id="gallery2" src="" alt="Lush greenery at the project site" class="rounded-lg shadow-md aspect-square object-cover w-full h-full hover:scale-105 transition-transform"></div>
+                    <div class="fade-in" style="transition-delay: 200ms;"><img data-img-id="gallery3" src="" alt="Model flat exterior" class="rounded-lg shadow-md aspect-square object-cover w-full h-full hover:scale-105 transition-transform"></div>
+                    <div class="fade-in"><img data-img-id="gallery4" src="" alt="A different style of model home" class="rounded-lg shadow-md aspect-square object-cover w-full h-full hover:scale-105 transition-transform"></div>
+                    <div class="fade-in" style="transition-delay: 100ms;"><img data-img-id="gallery5" src="" alt="Spacious wooden deck" class="rounded-lg shadow-md aspect-square object-cover w-full h-full hover:scale-105 transition-transform"></div>
+                    <div class="fade-in" style="transition-delay: 200ms;"><img data-img-id="gallery6" src="" alt="Modern interior of a villa" class="rounded-lg shadow-md aspect-square object-cover w-full h-full hover:scale-105 transition-transform"></div>
+                </div>
             </div>
         </section>
 
@@ -179,7 +213,7 @@
                 </div>
                 <div class="max-w-4xl mx-auto flex flex-col md:flex-row gap-10">
                     <div class="md:w-1/2 p-8 bg-black/20 rounded-lg fade-in">
-                        <form name="contact" method="POST" data-netlify="true">
+                        <form name="contact" method="POST" data-netlify="true" action="/thank-you.html">
                             <div class="mb-4">
                                 <label for="name" class="block font-medium mb-1">Full Name</label>
                                 <input type="text" id="name" name="name" class="w-full px-4 py-2 bg-white/10 border border-gray-500 rounded-md focus:ring-2 focus:ring-accent focus:outline-none" required>
@@ -226,6 +260,72 @@
         </div>
     </footer>
     
-    <script type="module" src="script.js"></script>
+    <script>
+        // This object centralizes all image URLs for easier management.
+        const images = {
+            logo: 'https://i.imgur.com/8aVp6V2.png',
+            heroBackground: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=2070&auto=format&fit=crop',
+            aboutFamily: 'https://images.unsplash.com/photo-1616036740257-9449ea1f6605?q=80&w=2070&auto=format&fit=crop',
+            pastProject1: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=2070&auto=format&fit=crop',
+            pastProject2: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop',
+            layoutPlan: 'https://i.imgur.com/KqotvL5.jpeg',
+            gallery1: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=870&auto=format&fit=crop',
+            gallery2: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?q=80&w=870&auto=format&fit=crop',
+            gallery3: 'https://images.unsplash.com/photo-1518780664697-55e3ad937233?q=80&w=1965&auto=format&fit=crop',
+            gallery4: 'https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=2070&auto=format&fit=crop',
+            gallery5: 'https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?q=80&w=1974&auto=format&fit=crop',
+            gallery6: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=2070&auto=format&fit=crop',
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set background images and image sources
+            const heroBgElement = document.querySelector('.hero-bg');
+            if (heroBgElement && images.heroBackground) {
+                heroBgElement.style.backgroundImage = `url('${images.heroBackground}')`;
+            }
+
+            document.querySelectorAll('[data-img-id]').forEach(img => {
+                const imageId = img.dataset.imgId;
+                if (images[imageId]) {
+                    img.src = images[imageId];
+                }
+            });
+
+            // Initialize Lucide Icons
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+                document.querySelectorAll('#mobile-menu a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
+
+            // Fade-in animation on scroll
+            const faders = document.querySelectorAll('.fade-in');
+            const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+            const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) return;
+                    entry.target.classList.add('visible');
+                    appearOnScroll.unobserve(entry.target);
+                });
+            }, appearOptions);
+
+            faders.forEach(fader => {
+                appearOnScroll.observe(fader);
+            });
+        });
+    </script>
 </body>
 </html>
+
