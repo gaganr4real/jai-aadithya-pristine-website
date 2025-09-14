@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jai Aadithya Pristine - Nature's Retreat</title>    
+    <!-- External Libraries & Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-base-100 text-neutral font-sans">
+
+    <!-- Header -->
+    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="flex-shrink-0">
+                <img data-img-id="logo" src="" alt="Jai Aadithya Groups Logo" class="h-12 w-auto">
+            </a>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="hover:text-primary transition-colors">About</a>
+                <a href="#past-projects" class="hover:text-primary transition-colors">Our Legacy</a>
+                <a href="#amenities" class="hover:text-primary transition-colors">Amenities</a>
+                <a href="#location" class="hover:text-primary transition-colors">Location</a>
+                <a href="#gallery" class="hover:text-primary transition-colors">Gallery</a>
+            </nav>
+            <a href="#contact" class="hidden md:inline-block bg-accent text-white font-semibold px-5 py-2 rounded-md hover:opacity-90 transition-opacity">Contact Us</a>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu" class="h-6 w-6"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 hover:text-primary">About</a>
+            <a href="#past-projects" class="block py-2 hover:text-primary">Our Legacy</a>
+            <a href="#amenities" class="block py-2 hover:text-primary">Amenities</a>
+            <a href="#location" class="block py-2 hover:text-primary">Location</a>
+            <a href="#gallery" class="block py-2 hover:text-primary">Gallery</a>
+            <a href="#contact" class="block mt-2 bg-accent text-white font-semibold text-center px-5 py-2 rounded-md hover:opacity-90">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-bg text-white relative h-[80vh] flex items-center justify-center text-center">
+            <div class="absolute inset-0 bg-black/60"></div>
+            <div class="relative z-10 px-6">
+                <h1 class="text-4xl md:text-6xl font-bold font-serif mb-4 fade-in">Jai Aadithya Pristine</h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 fade-in" style="transition-delay: 200ms;">Nature's Retreat: Where Comfort Meets Nature in the Heart of the City.</p>
+                <a href="#about" class="bg-accent text-white font-semibold px-8 py-3 rounded-md hover:opacity-90 transition-opacity transform hover:scale-105 fade-in" style="transition-delay: 400ms;">
+                    Discover More
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2 fade-in">
+                        <img data-img-id="aboutFamily" src="" alt="A happy Indian family in their home" class="rounded-lg shadow-xl w-full h-auto">
+                    </div>
+                    <div class="md:w-1/2 fade-in" style="transition-delay: 200ms;">
+                        <h2 class="text-3xl font-bold font-serif text-neutral mb-4">Your Urban Oasis Awaits</h2>
+                        <p class="mb-4 text-gray-700">
+                            At Pristine Nature's Retreat, we harmonize the comforts of modern living with the serenity of nature. Our mission at Jai Aadithya Groups is to offer a tranquil escape from urban chaos without compromising on convenience.
+                        </p>
+                        <p class="mb-6 text-gray-700">
+                            Nestled amidst lush greenery, each farmhouse is meticulously designed with a seamless blend of contemporary amenities and earthy aesthetics, ensuring a stay that soothes the soul.
+                        </p>
+                        <a href="#contact" class="bg-neutral text-white font-semibold px-6 py-3 rounded-md hover:bg-neutral/90 transition-colors">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Past Projects Section -->
+        <section id="past-projects" class="py-20 bg-base-100">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+                    <div class="md:w-1/2 fade-in">
+                        <div class="grid grid-cols-2 gap-4">
+                            <img data-img-id="pastProject1" src="" alt="Exterior of a modern completed house" class="rounded-lg shadow-xl w-full h-auto aspect-[4/5] object-cover">
+                            <img data-img-id="pastProject2" src="" alt="Another completed modern villa" class="rounded-lg shadow-xl w-full h-auto aspect-[4/5] object-cover mt-8">
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 fade-in" style="transition-delay: 200ms;">
+                        <h2 class="text-3xl font-bold font-serif text-neutral mb-4">A Legacy of Excellence</h2>
+                        <p class="mb-4 text-gray-700">
+                            Jai Aadithya Groups has a proven track record of delivering exceptional living spaces that blend quality craftsmanship with thoughtful design. Our portfolio of completed projects stands as a testament to our commitment to creating communities where residents thrive.
+                        </p>
+                        <p class="mb-6 text-gray-700">
+                           Each project is built on a foundation of trust, transparency, and a deep understanding of our clients' aspirations for a better lifestyle.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Amenities Section -->
+        <section id="amenities" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold font-serif text-neutral fade-in">A Lifestyle of Harmony</h2>
+                    <p class="text-lg text-gray-700 mt-2 fade-in" style="transition-delay: 150ms;">Modern comforts surrounded by natural beauty.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-center">
+                    <div class="fade-in bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow flex flex-col"><i data-lucide="trees" class="text-primary h-12 w-12 mb-4 mx-auto"></i><h3 class="font-semibold mt-auto pt-4">Lush Parks</h3></div>
+                    <div class="fade-in bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow flex flex-col" style="transition-delay: 100ms;"><i data-lucide="shield-check" class="text-primary h-12 w-12 mb-4 mx-auto"></i><h3 class="font-semibold mt-auto pt-4">Gated Community</h3></div>
+                    <div class="fade-in bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow flex flex-col" style="transition-delay: 200ms;"><i data-lucide="waves" class="text-primary h-12 w-12 mb-4 mx-auto"></i><h3 class="font-semibold mt-auto pt-4">Swimming Pool</h3></div>
+                    <div class="fade-in bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow flex flex-col" style="transition-delay: 300ms;"><i data-lucide="bird" class="text-primary h-12 w-12 mb-4 mx-auto"></i><h3 class="font-semibold mt-auto pt-4">Pond & Birds Area</h3></div>
+                    <div class="fade-in bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow flex flex-col">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary h-12 w-12 mb-4 mx-auto"><path d="m4 19 3-15"></path><path d="m17 4 3 15"></path><path d="M12 2v20"></path></svg>
+                        <h3 class="font-semibold mt-auto pt-4">Wide Roads</h3>
+                    </div>
+                    <div class="fade-in bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow flex flex-col" style="transition-delay: 100ms;"><i data-lucide="lightbulb" class="text-primary h-12 w-12 mb-4 mx-auto"></i><h3 class="font-semibold mt-auto pt-4">Street Lights</h3></div>
+                    <div class="fade-in bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow flex flex-col" style="transition-delay: 200ms;"><i data-lucide="sprout" class="text-primary h-12 w-12 mb-4 mx-auto"></i><h3 class="font-semibold mt-auto pt-4">Fruit Plantations</h3></div>
+                    <div class="fade-in bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow flex flex-col" style="transition-delay: 300ms;"><i data-lucide="carrot" class="text-primary h-12 w-12 mb-4 mx-auto"></i><h3 class="font-semibold mt-auto pt-4">Vegetable Gardens</h3></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section id="location" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold font-serif text-neutral fade-in">Prime Location, Excellent Connectivity</h2>
+                    <p class="text-lg text-gray-700 mt-2 fade-in" style="transition-delay: 150ms;">Your retreat is closer than you think.</p>
+                </div>
+                <div class="flex flex-col md:flex-row gap-8 items-center">
+                    <div class="md:w-1/2 fade-in">
+                        <div class="bg-base-100 rounded-lg p-8 shadow-inner">
+                            <h3 class="text-xl font-semibold mb-4 text-neutral">Key Distances:</h3>
+                            <ul class="space-y-3 text-gray-700">
+                                <li class="flex items-center"><i data-lucide="map-pin" class="h-5 w-5 mr-3 text-primary"></i><span>500m from Chennai Express Highway</span></li>
+                                <li class="flex items-center"><i data-lucide="map-pin" class="h-5 w-5 mr-3 text-primary"></i><span>14km from Hopefarm Metro</span></li>
+                                <li class="flex items-center"><i data-lucide="map-pin" class="h-5 w-5 mr-3 text-primary"></i><span>14km from Hosakote</span></li>
+                                <li class="flex items-center"><i data-lucide="map-pin" class="h-5 w-5 mr-3 text-primary"></i><span>Direct Connection to ITPL</span></li>
+                                <li class="flex items-center"><i data-lucide="map-pin" class="h-5 w-5 mr-3 text-primary"></i><span>Towards Chikkatirupati Road</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 fade-in" style="transition-delay: 200ms;">
+                         <img data-img-id="layoutPlan" src="" alt="Layout plan of Pristine Nature's Retreat" class="rounded-lg shadow-xl w-full h-auto">
+                         <p class="text-center text-sm text-gray-500 mt-2">Villa Plots Layout Development</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-20 bg-base-100">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold font-serif text-neutral fade-in">Visual Journey</h2>
+                    <p class="text-lg text-gray-700 mt-2 fade-in" style="transition-delay: 150ms;">Glimpses of the serenity that awaits you.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <img data-img-id="gallery1" src="" alt="Completed project villa" class="fade-in rounded-lg shadow-md aspect-square object-cover w-full h-full hover:scale-105 transition-transform">
+                    <img data-img-id="gallery2" src="" alt="Lush greenery at the project site" class="fade-in rounded-lg shadow-md aspect-square object-cover w-full h-full hover:scale-105 transition-transform" style="transition-delay: 100ms;">
+                    <img data-img-id="gallery3" src="" alt="Model flat exterior" class="fade-in rounded-lg shadow-md aspect-square object-cover w-full h-full hover:scale-105 transition-transform" style="transition-delay: 200ms;">
+                    <img data-img-id="gallery4" src="" alt="A different style of model home" class="fade-in rounded-lg shadow-md aspect-square object-cover w-full h-full hover:scale-105 transition-transform" style="transition-delay: 300ms;">
+                    <img data-img-id="gallery5" src="" alt="Spacious wooden deck" class="fade-in rounded-lg shadow-md aspect-square object-cover w-full h-full hover:scale-105 transition-transform" style="transition-delay: 400ms;">
+                    <img data-img-id="gallery6" src="" alt="Modern interior of a villa" class="fade-in rounded-lg shadow-md aspect-square object-cover w-full h-full hover:scale-105 transition-transform" style="transition-delay: 500ms;">
+                
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-neutral text-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold font-serif fade-in">Opening Doors to Your Future</h2>
+                    <p class="text-lg text-gray-300 mt-2 fade-in" style="transition-delay: 150ms;">Get in touch to schedule a site visit or request more information.</p>
+                </div>
+                <div class="max-w-4xl mx-auto flex flex-col md:flex-row gap-10">
+                    <div class="md:w-1/2 p-8 bg-black/20 rounded-lg fade-in">
+                        <form name="contact" method="POST" data-netlify="true">
+                            <div class="mb-4">
+                                <label for="name" class="block font-medium mb-1">Full Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-2 bg-white/10 border border-gray-500 rounded-md focus:ring-2 focus:ring-accent focus:outline-none" required>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                                <div>
+                                    <label for="email" class="block font-medium mb-1">Email</label>
+                                    <input type="email" id="email" name="email" class="w-full px-4 py-2 bg-white/10 border border-gray-500 rounded-md focus:ring-2 focus:ring-accent focus:outline-none" required>
+                                </div>
+                                <div>
+                                    <label for="phone" class="block font-medium mb-1">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 bg-white/10 border border-gray-500 rounded-md focus:ring-2 focus:ring-accent focus:outline-none" required>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block font-medium mb-1">Message</label>
+                                <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 bg-white/10 border border-gray-500 rounded-md focus:ring-2 focus:ring-accent focus:outline-none" required></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-accent text-white font-semibold py-3 px-6 rounded-md hover:opacity-90 transition-opacity">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="md:w-1/2 fade-in" style="transition-delay: 200ms;">
+                        <h3 class="text-xl font-bold mb-4">Contact Details</h3>
+                        <div class="flex items-start mb-4">
+                            <i data-lucide="phone" class="w-5 h-5 mr-3 mt-1 text-accent"></i>
+                            <a href="tel:+919880101567" class="hover:text-accent">+91 9880101567</a>
+                        </div>
+                        <div class="flex items-start mb-4">
+                           <i data-lucide="mail" class="w-5 h-5 mr-3 mt-1 text-accent"></i>
+                            <a href="mailto:jayaadithyagroup@gmail.com" class="hover:text-accent">jayaadithyagroup@gmail.com</a>
+                        </div>
+                         <h3 class="text-xl font-bold mt-8 mb-4">Project by</h3>
+                         <p class="text-2xl font-bold">Jai Aadithya<span class="text-primary"> Groups</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2025 Pristine Nature's Retreat by Jai Aadithya Groups. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script type="module" src="script.js"></script>
+</body>
+</html>
